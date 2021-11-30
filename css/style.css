@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    text-align: center;
 }
 
 
@@ -21,21 +22,35 @@ body {
 .column1 {
     width: 100%;
     float: left;
+    background-color: aquamarine;
 }
 
 .column2 {
     width: 50%;
     float: left;
+    background-color: lightpink;
 }
 
 .column3 {
-    width: 33.33;
+    width: 33.33%;
     float: left;
+    background-color: lightskyblue;
 }
 
 .column4 {
     width: 25%;
     float: left;
+    background-color: lightyellow;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    /* REGLAS */
+    /* column3 pasará de tener 33.33% a 100% */
+    .column3 {
+        width: 100%;
+    }
+    /* column4 pasará de tener 25% a 50% */
+    .column4 {
+        width: 50%;
+    }
+}
